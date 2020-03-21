@@ -1,0 +1,18 @@
+.Modal-portal.Modal_theme_primary .ClickAwayListener {
+  border: 1px solid #2f79cb;
+  font-family: Roboto, sans-serif;
+  line-height: 1.4;
+  display: block;
+  background: #fffff7;
+  top: 50%;
+  left: 50%;
+  z-index: 999999;
+  position: absolute;
+  width: 600px;
+  max-height: 100vh;
+  overflow: auto;
+  color: #222222;
+  transform: translate(-50%, -50%);
+  borderRadius: 10px;
+  padding: 10px;
+}
