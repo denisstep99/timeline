@@ -3,7 +3,7 @@ import './Modal.scss'
 import IModalProps, {cnModal} from './index';
 import Portal from "../Portal/Portal";
 import ClickAwayListener from "../ClickAwayListener/ClickAwayListener";
-
+import {Paranja} from "../Paranja/ParanjaComponent";
 export const Modal: FC<IModalProps> = function (props: IModalProps) {
     const {
         children,
@@ -31,11 +31,10 @@ export const Modal: FC<IModalProps> = function (props: IModalProps) {
     return (
         <div className={cnModal({}, [className])}>
             {isOpen && <Portal onRendered={onRendered} container={container} className={cnModal('portal', [className])}>
-              <div className={'Paranja'}>
+              <Paranja theme={'dark'}></Paranja>
                 <ClickAwayListener onClickAway={onClose}>
                     {children}
                 </ClickAwayListener>
-              </div>
             </Portal>}
         </div>)
 };

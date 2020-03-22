@@ -1,5 +1,5 @@
 import React from "react";
-import {IClassNameProps, withBemMod} from "@bem-react/core";
+import {withBemMod} from "@bem-react/core";
 import './Modal_theme_primary.scss';
 
 import IModalProps, {cnModal} from "../index";

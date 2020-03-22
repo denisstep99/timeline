@@ -12,7 +12,7 @@ function createDefaultPlaceholder(className = '') {
     return element;
 }
 
-const Portal : FC<IPortalProps> = function(props: IPortalProps) {
+const Portal : FC<IPortalProps> = function Portal(props: IPortalProps) {
     const { children, container, onRendered, className } = props;
     const [mountNode, setMountNode] = React.useState<null | Element>(null);
 
